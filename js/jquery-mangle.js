@@ -19,3 +19,12 @@ $.fn.mangle = function(mangler){
           $.each(holder.data(), mangler) );
   }).end();
 };
+
+// restore original witness
+$.fn.unmangle = function(){
+  return this.each(function(){
+    var holder = this;
+    holder.data(holder.stash('data-stash'));
+    return holder;
+  });
+};
