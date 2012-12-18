@@ -23,9 +23,11 @@ How to use
 
 1. Add the library
 
+
     <script src="path/to/james-tron.js">
 
 2. Define states
+
 
     <form class=when-signed-out>
         <input name=email>
@@ -35,6 +37,7 @@ How to use
     <a href="/profile" class=when-signed-in>Profile</a>
     
 3. Define events
+
 
     $(document)
     
