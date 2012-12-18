@@ -4,7 +4,7 @@ James Tron
 Overview
 --------
 
-James tron is a framework designed to facilitate feature architecture, interoperability,
+James Tron is a framework designed to facilitate feature architecture, interoperability,
 testing and analytics.
 
 At the center of all interaction is the user and the actions performed. Similarly, the server also
@@ -16,3 +16,22 @@ In a sense, events represent the footprints of a user in a system. This user can
 a user agent or browser running tests, or a server calling another server.
 
 In between events, *states* determine the “stopping points” between events. *events _connect_ states*.
+
+
+How to use
+--------
+
+Add the library.
+    <script src="path/to/james-tron.js">
+
+Define states.
+    $('form').tron({
+        recognize: function() {
+            $('[class^=when-]', this).hide();                 
+        
+            if (sign_in) $('.when-sign-in').show();                
+            if (register) $('.when-register').show();                        
+        }
+    });
+
+    $(document).ready(function(){$('form').trigger('recognize')})
