@@ -22,9 +22,11 @@ How to use
 --------
 
 Add the library.
+
     <script src="path/to/james-tron.js">
 
 Define states.
+
     $('form').tron({
         recognize: function() {
             $('[class^=when-]', this).hide();                 
