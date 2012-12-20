@@ -56,7 +56,7 @@ How to use
             } })
             
         // a reset function reads data and determines what to show
-        .always(function reset(){
+        .rectify(function reset(){
           $('[class^=when-]').hide();
           
           if ($(this).data('user').name) 
