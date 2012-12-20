@@ -39,7 +39,7 @@ How to use
 3. Define events
 
 
-    $(document)
+        $(document)
     
         // application data is stored on the document
         .data({
