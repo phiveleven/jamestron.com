@@ -24,8 +24,11 @@ $('<script>', { src: 'http://code.jquery.com/qunit/qunit-1.10.0.js'})
 // create qunit container
 $($('<section>', { id: 'qunit' }))
   .insertAfter('script:last').hide();
-// this is making the app slow
-//$(document).one('keyup',function(e){ if (e.keyCode==27) $('#qunit').show() })
+$($('<section>', { id: 'qunit-fixture' }))
+  .insertAfter('script:last').hide();
+
+// toggle qunit with esc
+$(document).on('keyup',function(e){ if (e.keyCode==27) $('#qunit, #qunit-fixture').toggle() })
 
 // TODO define promise interfase for qunit tests not yet loaded
   
@@ -35,4 +38,6 @@ catch (e){
   if (debug) recognize ('My name is Tron. James Tron.') 
   else console.warn(e);
 }
+
+
 
