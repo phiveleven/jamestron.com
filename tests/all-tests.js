@@ -1,8 +1,4 @@
-console.info('tests loading...');
-
-$(function(){
-	console.debug('document ready');
+test ('Test Interface', function(){
+	ok ($.fn.tron);
+	ok ($.fn.troff);
 });
-
-console.info('tests loaded');
-
