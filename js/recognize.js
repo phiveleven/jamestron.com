@@ -28,7 +28,7 @@ $($('<section>', { id: 'qunit-fixture' }))
   .insertAfter('script:last').hide();
 
 // toggle qunit with esc
-$(document).on('keyup',function(e){ if (e.keyCode==27) $('#qunit, #qunit-fixture').toggle() })
+$(document).on('keyup',function(e){ if (e.keyCode==27) $('#qunit').toggle() })
 
 // TODO define promise interfase for qunit tests not yet loaded
   
