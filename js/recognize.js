@@ -16,8 +16,7 @@ function recognize(something){ if (debug)
 
 // load test framework (qunit)
 $('<script>', { src: 'http://code.jquery.com/qunit/qunit-1.10.0.js'})
-  .add('<script>', { src: 'tests/all-tests.js',
-                     defer:'for sure' })
+  .add('<script>', { src: 'tests/all-tests.js' })
   .add($('<link>', { rel:'stylesheet',
                      href: 'http://code.jquery.com/qunit/qunit-1.10.0.css',
                      'data-noprefix': 'maybe' }))
@@ -31,8 +30,16 @@ $($('<section>', { id: 'qunit-fixture' }))
 // toggle qunit with esc
 $(document).on('keyup',function(e){ if (e.keyCode==27) $('#qunit').toggle() })
 
-// TODO define promise interfase for qunit tests not yet loaded
-  
+// accumulator
+var _pending_tests = [];
+function test(){ _pending_tests.push(arguments);  }
+$(function(){
+  $.each(_pending_tests, function(){
+    test.apply({}, this);
+  });
+  delete _pending_tests;
+});
+
 // test tests  
 try { throw 'ಠ_ಠ' }
 catch (e){
