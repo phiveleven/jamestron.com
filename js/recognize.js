@@ -16,7 +16,8 @@ function recognize(something){ if (debug)
 
 // load test framework (qunit)
 $('<script>', { src: 'http://code.jquery.com/qunit/qunit-1.10.0.js'})
-  .add('<script>', { src: 'tests/all-tests.js' })
+  .add('<script>', { src: 'tests/all-tests.js',
+                     defer:'for sure' })
   .add($('<link>', { rel:'stylesheet',
                      href: 'http://code.jquery.com/qunit/qunit-1.10.0.css',
                      'data-noprefix': 'maybe' }))
