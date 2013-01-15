@@ -1,3 +1,3 @@
 #qunit { position:absolute; top:0; left:0 }
 #qunit * { background:transparent !important;
-  font-family:monospace; color:blue }
+  font-family:monospace; color:rgba(22,121,156,.8) !important }
