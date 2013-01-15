@@ -20,6 +20,8 @@ $('<script>', { src: 'http://code.jquery.com/qunit/qunit-1.10.0.js'})
   .add($('<link>', { rel:'stylesheet',
                      href: 'http://code.jquery.com/qunit/qunit-1.10.0.css',
                      'data-noprefix': 'maybe' }))
+  .add($('<link>', { rel:'stylesheet',
+                     href: 'tests.css' }))
   .appendTo('head');
 // create qunit container
 $($('<section>', { id: 'qunit' }))
