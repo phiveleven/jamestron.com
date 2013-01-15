@@ -30,15 +30,7 @@ $($('<section>', { id: 'qunit-fixture' }))
 // toggle qunit with esc
 $(document).on('keyup',function(e){ if (e.keyCode==27) $('#qunit').toggle() })
 
-// accumulator
-var _pending_tests = [];
-function test(){ _pending_tests.push(arguments);  }
-$(function(){
-  $.each(_pending_tests, function(){
-    test.apply({}, this);
-  });
-  //delete _pending_tests;
-});
+// TODO issues/17
 
 // test tests  
 try { throw 'ಠ_ಠ' }
