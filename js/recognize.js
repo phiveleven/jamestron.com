@@ -37,7 +37,7 @@ $(function(){
   $.each(_pending_tests, function(){
     test.apply({}, this);
   });
-  delete _pending_tests;
+  //delete _pending_tests;
 });
 
 // test tests  
