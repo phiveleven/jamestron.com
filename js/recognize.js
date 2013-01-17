@@ -21,10 +21,12 @@ $('<script>', { src: 'http://code.jquery.com/qunit/qunit-1.10.0.js'})
                      'data-noprefix': 'maybe' }))
   .add($('<link>', { rel:'stylesheet',
                      href: 'tests/qunit-console.css' }))
+  .add($('<link>', { rel:'stylesheet',
+                     href: 'http://fonts.googleapis.com/css?family=Electrolize' }))
   .appendTo('head');
 
 $(function () {
-  $.getScript('tests/all-tests.js')
+  $.getScript('tests/all-tests.js');
 });
 
 // create qunit container
