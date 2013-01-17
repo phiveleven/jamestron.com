@@ -25,7 +25,7 @@ $('<script>', { src: 'http://code.jquery.com/qunit/qunit-1.10.0.js'})
 
 $(function () {
   $.getScript('tests/all-tests.js')
-)};
+});
 
 // create qunit container
 $($('<section>', { id: 'qunit' }))
