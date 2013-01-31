@@ -1,6 +1,6 @@
 html,body { background:#040420; font:500 1em/1.4 Electrolize; color:#c3eddf }
-a { color:inherit; text-decoration:none; font-weight:600 }
-a:hover { text-decoration:underline }
+a { color:#fff; text-decoration:none; font-weight:600 }
+a:hover { background:#c3eddf; color:#000 }
 
 #logo { font-size:6em; width:5em; height:5em; box-sizing:border-box; 
   margin:1em auto; padding:1.3em 0 0; text-align:center;
