@@ -1,5 +1,6 @@
 html,body { font:500 1em/1.4 Electrolize; background:#040420 }
-body { width:5em; height:5em; box-sizing:border-box; 
+
+#logo { width:5em; height:5em; box-sizing:border-box; 
   margin:1em auto; padding:1.3em 0 0; text-align:center;
   border:.3ex solid; border-radius:3em; animation:glow 4s infinite alternate }
 #logo>a { font-size:100px; display:inline-block; width:1em; height:1em; border-radius:.2em;
