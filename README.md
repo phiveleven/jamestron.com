@@ -25,7 +25,7 @@ Experience
 
 We're looking at three usecases for James Tron. Interaction Designers, Product and Project Managers, and Engineers.
 
-You start by describing the product and its features.
+To start you describe the product and its features:
 
         Site features:
         User can:
