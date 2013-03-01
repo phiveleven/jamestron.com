@@ -1,5 +1,9 @@
 Begin Log://
 
+2013 March:
+
+1st - Expanded experience section in Readme.md [Issue #18]
+
 2013 February:
 
 27th — Worked on defining experience [Issue #18]. Added experience section to Readme.md
