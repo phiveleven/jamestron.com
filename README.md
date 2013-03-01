@@ -27,12 +27,39 @@ We're looking at three usecases for James Tron. Interaction Designers, Product a
 
 To start you describe the product and its features:
 
-        Site features:
+        ${Project Name}
         User can:
-                - Register / Un-Register
+                - Register Account / Delete Account
                 - Login / Logout
                 - Search site
-                - 
+                - Create blog post / Delete a blog post
+                - Share blog post
+                        - on Facebook
+                        - on Twitter
+        
+Each of these features are mapped to events.
+
+        user() {
+                .register_account({ ... })
+                .login({ ... })
+                .search_site({ ... })
+                .create_article({ ... })
+                .share_article({ ... });
+                }
+                
+Example test case:
+        
+        GET user/${name}
+                Ok? return new User (name)
+                Not Found? return undefined
+
+Example test case:
+        
+        GET article/${title}
+                Ok? return new Article (title)
+                Not Found? return undefined
+
+
 
 
 How to use
