@@ -14,6 +14,7 @@ function recognize(something){ if (debug)
         // a brute join
         [].join.call(arguments,' ')); }
 
+
 // load test framework (qunit)
 $('<script>', { src: 'http://code.jquery.com/qunit/qunit-1.10.0.js'})
   .add($('<link>', { rel:'stylesheet',
