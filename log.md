@@ -2,6 +2,8 @@ Begin Log://
 
 2013 March:
 
+22nd - Committed a bunch of stuff, fixing load errors and getting closer to using Require to load site.
+
 14th - Worked on setting up Require.js to load site. Set up James Tron locally on Jon's machine to close [Issue #22].
 
 8th - Added Require.js to close [Issue #21]. Discussed an event queue system as an ideal loader (roll call)

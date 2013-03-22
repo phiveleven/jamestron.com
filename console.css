@@ -1,4 +1,4 @@
-@import "qunit-console.css";
+@import "tests/qunit-console.css";
 
 html,body { background:#040420; font:500 1em/1.4 Electrolize; color:#c3eddf }
 a { color:#fff; text-decoration:none; font-weight:600 }
