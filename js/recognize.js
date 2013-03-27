@@ -2,17 +2,16 @@
  *  @darkgoyle circa 2012
  */
 
-// debug
-var debug = !0;
+var debug = true;
 
 function recognize(something){ if (debug)
-  // output
-  console
-  // delivery method based on truthiness of 'something'
-  // TODO add delta and warn,debug,dir
+  this.output
+  // error or info: depends if 'something' is true or not
     [ ['error','info'] [+!!something] ] (
-        // a brute join
-        [].join.call(arguments,' ')); }
+        // join the result with all arguments
+        [].join.call(arguments, this.separator || ' ') ); }
+        
+.bind({ output: console });
 
 
 // load test framework (qunit)
