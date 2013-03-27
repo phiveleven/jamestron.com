@@ -2,6 +2,8 @@ Begin Log://
 
 2013 March:
 
+27th - Decided Require wasn't worth it. Opened task to reinvent the AMD library wheel. Reviewed feature.js
+
 22nd - Committed a bunch of stuff, fixing load errors and getting closer to using Require to load site.
 
 14th - Worked on setting up Require.js to load site. Set up James Tron locally on Jon's machine to close [Issue #22].
