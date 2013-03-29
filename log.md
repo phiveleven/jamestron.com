@@ -2,6 +2,8 @@ Begin Log://
 
 2013 March:
 
+29th - Removed Require. Jury-rigged bootloader.js to load jQuery. Added issue #26 and #25.
+
 27th - Decided Require wasn't worth it. Opened task to reinvent the AMD library wheel. Reviewed feature.js
 
 22nd - Committed a bunch of stuff, fixing load errors and getting closer to using Require to load site.
