@@ -28,17 +28,17 @@ Experience
 
 We're looking at three usecases for James Tron. Product and Project Managers, Interaction Designers, and Engineers.
 
-Product Manager
+**Product Manager**
         focus: vision, analytics
 
-Project Manager
+**Project Manager**
         focus: product capability, dev roadmap
         As a manager you have a dashboard of what tests are passing.
 
-Interaction Designers
+**Interaction Designers**
         focus: user flow quality, aesthetics
 
-Engineers
+**Engineers**
         focus: passing tests
 
 
