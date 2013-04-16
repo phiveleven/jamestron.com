@@ -9,11 +9,14 @@ Overview
 James Tron is a framework designed to facilitate feature architecture, interoperability,
 testing and analytics.
 
+The product converts specifications in natural language to tests and code.
+The end product is a translation from something high level that can be understood and written in tests.
+
 At the center of all interaction is the user and the actions performed. Similarly, the server also
 participates with responses, which are also events.
 
 By centering on events and using them as pivot points, there can be separate definitions of what
-the **events _do_** and how the **event _connect_** between each other.
+the **events _do_** and how the **events _connect_** between each other.
 In a sense, events represent the footprints of a user in a system. This user can be a physical person,
 a user agent or browser running tests, or a server calling another server.
 
@@ -23,9 +26,25 @@ In between events, **states** determine the “stopping points” between events
 Experience
 --------
 
-We're looking at three usecases for James Tron. Interaction Designers, Product and Project Managers, and Engineers.
+We're looking at three usecases for James Tron. Product and Project Managers, Interaction Designers, and Engineers.
+
+Product Manager
+        focus: vision, analytics
+
+Project Manager
+        focus: product capability, dev roadmap
+        As a manager you have a dashboard of what tests are passing.
+
+Interaction Designers
+        focus: user flow quality, aesthetics
+
+Engineers
+        focus: passing tests
+
 
 To start you describe the product and its features:
+
+The description of each feature has to be a comprehensive set of business critical requirements.
 
         ${Project Name}
         User can:
