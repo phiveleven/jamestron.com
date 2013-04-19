@@ -1,15 +1,17 @@
-# How to Use
-  
+# Define the Application
+
 ## 1. Add the library 
+  
+  Grab james-tron.js and add it to your project.
 
-  <script src="path/to/james-tron.js">
+    <script src="path/to/james-tron.js">
 
-## Console
+## 2. Ready the console
 
   - Design / define schema, states, events.
   - Manage automated tests
 
-## Design the schema
+## 3. Design the schema
 
   Determine the top level objects for the application
   
@@ -17,26 +19,33 @@
   
         function User() {}
 
-## Define the States
+## 4. Define the States
 
   Describe the states the objects can be in.
-  
-  User may be:
-    - Not registered
-    - Signed in
-    - Newly registered
-    - Signed out
+  This is a collection of functions that test what states the object is in.
   
   Example:
-  
-        <form class=when-signed-out>
-            <input name=email>
-            <button>Sign in</button>
-        </form>
     
-        <a href="/profile" class=when-signed-in>Profile</a>
+    User.prototype.is = { Anonymous: Function,
+                          Recognized: Function,
+                          New: Function }
 
-## Define the Events
+## 5. Define the Events
+
+  Describe the actions that trigger state changes.
+  
+  Example:
+    
+    User.prototype.can = { 'sign in': Function,
+                           'sign out': Function }
+
+
+# Implementation
+
+## 1. 
+    
+
+
 
 # API documentation
 ## Functions that define states
