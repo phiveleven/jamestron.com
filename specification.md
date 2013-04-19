@@ -1,25 +1,51 @@
-James Tron Specification
-
 # How to Use
-  ## Add the library
-  ## Something Something Dashboard
-  ## Design the schema
-  ## Define the States
-  ## Define the Events
+  
+## 1. Add the library 
+
+  <script src="path/to/james-tron.js">
+
+## Console
+
+  - Design / define schema, states, events.
+  - Manage automated tests
+
+## Design the schema
+
+  Determine the top level objects for the application
+  
+  Example:
+  
+        function User() {}
+
+## Define the States
+
+  Describe the states the objects can be in.
+  
+  User may be:
+    - Not registered
+    - Signed in
+    - Newly registered
+    - Signed out
+  
+  Example:
+  
+        <form class=when-signed-out>
+            <input name=email>
+            <button>Sign in</button>
+        </form>
+    
+        <a href="/profile" class=when-signed-in>Profile</a>
+
+## Define the Events
 
 # API documentation
-  ## Functions that define states
-    ### Get
-    ### Set
-      #### Add
-      #### Modify
-      #### Remove
-  ## Functions that define events
-    ### Get
-    ### Set
-      #### Add
-      #### Modify
-      #### Remove
+## Functions that define states
+### Get
+### Set (Add, Modify, Remove)
+
+## Functions that define events
+### Get
+### Set (Add, Modify, Remove)
 
   
 
