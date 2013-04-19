@@ -11,7 +11,7 @@
   - Design / define schema, states, events.
   - Manage automated tests
 
-## 3. Design the schema
+## 3. Define components
 
   Determine the top level objects for the application
   
@@ -19,7 +19,7 @@
   
         function User() {}
 
-## 4. Define the States
+## 4. Define the states
 
   Describe the states the objects can be in.
   This is a collection of functions that test what states the object is in.
@@ -30,7 +30,7 @@
                           Recognized: Function,
                           New: Function }
 
-## 5. Define the Events
+## 5. Define the events
 
   Describe the actions that trigger state changes.
   
@@ -58,7 +58,7 @@
 
   
 
-
+# Clipboard
 
         ${Project Name}
         User can:
@@ -95,49 +95,3 @@ Example test case:
 
 
 
-How to use
---------
-
-1. Add the library
-
-
-        <script src="path/to/james-tron.js">
-
-2. Define states
-
-
-        <form class=when-signed-out>
-            <input name=email>
-            <button>Sign in</button>
-        </form>
-    
-        <a href="/profile" class=when-signed-in>Profile</a>
-    
-3. Define events
-
-
-        $(document)
-    
-        // application data is stored on the document
-        .data({
-          user: {}
-        })
-        
-        // events mutate data
-        .tron({
-            'sign-in': function sign_in(){ 
-                $(this).data('user', { name:'james' });
-            },
-            'sign-out': function sign_out(){
-                $(this).data('user', {});
-            } })
-            
-        // a reset function reads data and determines what to show
-        .rectify(function reset(){
-          $('[class^=when-]').hide();
-          
-          if ($(this).data('user').name) 
-            $('.when-signed-in').show();                
-          else
-            $('.when-signed-out').show();
-        });
